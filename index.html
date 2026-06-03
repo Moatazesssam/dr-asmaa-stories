@@ -20,7 +20,7 @@
     align-items: center;
     padding: 40px 20px;
   }
-  .container { max-width: 720px; width: 100%; }
+  .container { max-width: 820px; width: 100%; }
   h1 {
     color: #0d3a35;
     font-size: 26px;
@@ -33,36 +33,33 @@
     font-size: 15px;
     margin-bottom: 36px;
   }
-  .workshop-card {
-    background: #fff;
-    border: 1px solid #e0d9c6;
-    border-right: 5px solid #c9885d;
+  .section-header {
+    background: linear-gradient(90deg, #0d3a35 0%, #1a5a52 100%);
+    color: #fff;
+    padding: 14px 20px;
     border-radius: 10px;
-    padding: 20px 24px;
-    margin-bottom: 28px;
+    margin: 36px 0 18px;
+    font-weight: 700;
   }
-  .workshop-card h2 {
-    color: #0d3a35;
-    font-size: 18px;
-    margin-bottom: 6px;
+  .section-header h2 {
+    font-size: 19px;
+    margin-bottom: 4px;
   }
-  .workshop-meta {
-    color: #5a6760;
-    font-size: 14px;
-    margin-bottom: 8px;
+  .section-header .meta-line {
+    font-size: 13px;
+    opacity: 0.88;
+    font-weight: 400;
   }
-  .workshop-meta strong { color: #0d3a35; }
   .sequence-grid {
     display: grid;
-    gap: 16px;
-    margin-bottom: 32px;
+    gap: 14px;
   }
   .seq-card {
     background: #fff;
     border: 1px solid #d8d3c2;
     border-right: 5px solid #1a5a52;
     border-radius: 10px;
-    padding: 20px 24px;
+    padding: 18px 22px;
     text-decoration: none;
     color: #1c1f1d;
     display: block;
@@ -74,33 +71,22 @@
   }
   .seq-card h3 {
     color: #0d3a35;
-    font-size: 18px;
-    margin-bottom: 8px;
+    font-size: 17px;
+    margin-bottom: 6px;
   }
   .seq-card p {
     color: #5a6760;
-    font-size: 14px;
+    font-size: 13.5px;
     line-height: 1.6;
+    margin-bottom: 10px;
   }
-  .seq-card .badge {
-    display: inline-block;
-    background: #f6c9b5;
-    color: #6e2e15;
-    padding: 4px 12px;
-    border-radius: 12px;
-    font-size: 12px;
-    font-weight: 600;
-    margin-top: 10px;
+  .seq-card .meta-row {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+    align-items: center;
   }
-  .footer {
-    color: #5a6760;
-    font-size: 13px;
-    text-align: center;
-    padding-top: 24px;
-    border-top: 1px solid #d8d3c2;
-    margin-top: 12px;
-  }
-  .seq-card .pdf-tag {
+  .pdf-tag {
     display: inline-block;
     background: #0d3a35;
     color: #fff;
@@ -108,38 +94,161 @@
     border-radius: 8px;
     font-size: 11px;
     font-weight: 600;
-    margin-right: 6px;
     letter-spacing: 0.5px;
+  }
+  .badge {
+    display: inline-block;
+    background: #f6c9b5;
+    color: #6e2e15;
+    padding: 4px 12px;
+    border-radius: 12px;
+    font-size: 12px;
+    font-weight: 600;
+  }
+  .badge-keyword {
+    background: #fff8eb;
+    color: #5a3a1a;
+    border: 1px solid #c9885d;
+  }
+  .footer {
+    color: #5a6760;
+    font-size: 13px;
+    text-align: center;
+    padding-top: 32px;
+    margin-top: 36px;
+    border-top: 1px solid #d8d3c2;
   }
 </style>
 </head>
 <body>
 <div class="container">
 
-<h1>🕊 سكوينسات ستوريز — ورشة "آمنة مطمئنة"</h1>
-<p class="subtitle">د. أسماء سعيد · إعداد فريق Moataz</p>
+<h1>🕊 سكوينسات ستوريز — د. أسماء سعيد</h1>
+<p class="subtitle">إعداد فريق Moataz · كل واحد بيفتح PDF جاهز تتفرّجي عليه أو تنزّليه</p>
 
-<div class="workshop-card">
-  <h2>الورشة: آمنة مطمئنة</h2>
-  <div class="workshop-meta"><strong>الميعاد:</strong> الجمعة ١٢/٦ — ٨ مساءً بتوقيت مصر</div>
-  <div class="workshop-meta"><strong>السعر:</strong> $19.99 لأول ٧٠ مشتركة (بعدها يتضاعف لـ $40)</div>
-  <div class="workshop-meta"><strong>كلمة الـ DM:</strong> «آمنة»</div>
+<!-- WORKSHOP -->
+<div class="section-header">
+  <h2>🕊 ورشة آمنة مطمئنة</h2>
+  <div class="meta-line">الجمعة ١٢/٦ — ٨ مساءً بتوقيت مصر · $19.99 لأول ٧٠ · DM: «آمنة»</div>
 </div>
-
 <div class="sequence-grid">
 
   <a class="seq-card" href="workshop-fomo-aman-mutmaina.pdf" target="_blank">
     <h3>🔥 سكوينس FOMO (٥ ستوريز)</h3>
     <p>سقف ٧٠ مقعد + سعر بيتضاعف من $19.99 لـ $40 + ديدلاين الجمعة. بيستخدم الـ Bonus Stack ($265 → $19.99) كقنبلة قيمة.</p>
-    <span class="pdf-tag">PDF</span>
-    <span class="badge">٥ ستوريز · DM «آمنة»</span>
+    <div class="meta-row">
+      <span class="pdf-tag">PDF</span>
+      <span class="badge">٥ ستوريز</span>
+      <span class="badge badge-keyword">DM «آمنة»</span>
+    </div>
   </a>
 
   <a class="seq-card" href="workshop-pain-fix-proof-cta-anxious-success.pdf" target="_blank">
     <h3>🪞 الألم ← الحل ← الإثبات ← الطلب (٧ ستوريز)</h3>
     <p>زاوية عاطفية: "ناجحة من برّه، تعبانة من جوّه". بتلمس الست اللي معاها فلوس ومكانة بس قلقانة. الحل = جهاز عصبي آمن، مش فلوس أكتر.</p>
-    <span class="pdf-tag">PDF</span>
-    <span class="badge">٧ ستوريز · DM «آمنة»</span>
+    <div class="meta-row">
+      <span class="pdf-tag">PDF</span>
+      <span class="badge">٧ ستوريز</span>
+      <span class="badge badge-keyword">DM «آمنة»</span>
+    </div>
+  </a>
+
+</div>
+
+<!-- NOUR COURSE -->
+<div class="section-header">
+  <h2>🌟 كورس نشوة النور</h2>
+  <div class="meta-line">رحلة ٤٠ يوم · ٧ بوابات · asmaasaied.net/nour · DM: «نور» (أو «خريطة» للفريبي)</div>
+</div>
+<div class="sequence-grid">
+
+  <a class="seq-card" href="nour-fomo-doors-closing.pdf" target="_blank">
+    <h3>🔥 سكوينس FOMO — قفل التسجيل (٤ ستوريز)</h3>
+    <p>سكوينس ٤ ستوريز بيشتغل على ديدلاين قفل التسجيل في الكوهورت الجاي خلال ٢٤ ساعة. هيكل خطّاف نتيجة + كشف + ضغط + الندا الأخير.</p>
+    <div class="meta-row">
+      <span class="pdf-tag">PDF</span>
+      <span class="badge">٤ ستوريز</span>
+      <span class="badge badge-keyword">DM «نور»</span>
+    </div>
+  </a>
+
+  <a class="seq-card" href="nour-netflix-vs-freebie-7-gates-map.pdf" target="_blank">
+    <h3>📺 Netflix Vs Freebie — خريطة الـ ٧ بوابات (٣ ستوريز)</h3>
+    <p>مقارنة غير عادلة بين Netflix والـ PDF المجاني "خريطة الـ ٧ بوابات". بيوزّع الفريبي ويسحب الجمهور لكورس نشوة النور.</p>
+    <div class="meta-row">
+      <span class="pdf-tag">PDF</span>
+      <span class="badge">٣ ستوريز</span>
+      <span class="badge badge-keyword">DM «خريطة»</span>
+    </div>
+  </a>
+
+  <a class="seq-card" href="nour-hate-comment-reply-proof-avalanche.pdf" target="_blank">
+    <h3>💬 Hate Comment Reply — انهيار الإثبات (٩ ستوريز)</h3>
+    <p>سكوينس ٩ ستوريز بياخد كومنت شك على الإطار الروحي/السوماتيك ويسحقه بإثبات شخصي + عميلات، وبعدين بيقسم الجمهور لساخرين/باحثات.</p>
+    <div class="meta-row">
+      <span class="pdf-tag">PDF</span>
+      <span class="badge">٩ ستوريز</span>
+      <span class="badge badge-keyword">DM «نور»</span>
+    </div>
+  </a>
+
+  <a class="seq-card" href="nour-pain-fix-proof-cta-exhaustion.pdf" target="_blank">
+    <h3>🪞 الألم ← الحل ← الإثبات ← الطلب (٧ ستوريز)</h3>
+    <p>زاوية "الست الجدعة" / الإرهاق العاطفي — أعلى زاوية تفاعل لجمهور د. أسماء. بتقدّم الـ ٧ بوابات كحل للستات اللي تعبانة من جوّاها.</p>
+    <div class="meta-row">
+      <span class="pdf-tag">PDF</span>
+      <span class="badge">٧ ستوريز</span>
+      <span class="badge badge-keyword">DM «نور»</span>
+    </div>
+  </a>
+
+</div>
+
+<!-- MONEY AND HAPPINESS COURSE -->
+<div class="section-header">
+  <h2>💰 كورس المال والسعادة</h2>
+  <div class="meta-line">asmaasaied.net/question · كلمات DM متنوعة حسب السكوينس</div>
+</div>
+<div class="sequence-grid">
+
+  <a class="seq-card" href="fomo-yt-live-first-door.pdf" target="_blank">
+    <h3>🔥 سكوينس FOMO — لايف يوتيوب (٤ ستوريز)</h3>
+    <p>سكوينس بياخد المتابعات للايف يوتيوب الـ ١٠٨ دقايق "أول باب لاستقبال المال والسعادة" — وصول بيختفي خلال ٢٤ ساعة.</p>
+    <div class="meta-row">
+      <span class="pdf-tag">PDF</span>
+      <span class="badge">٤ ستوريز</span>
+      <span class="badge badge-keyword">DM «المال والسعادة»</span>
+    </div>
+  </a>
+
+  <a class="seq-card" href="killshot-money-happiness-course.pdf" target="_blank">
+    <h3>🎯 سكوينس Killshot (٣ ستوريز)</h3>
+    <p>كومنت مصمّم بيعكس الاعتراض الحقيقي ← كومة إثبات لـ ٣ عميلات سحقوه ← الـ Killshot وإعادة تأطير النتيجة كـ "نظام" مش "حظ".</p>
+    <div class="meta-row">
+      <span class="pdf-tag">PDF</span>
+      <span class="badge">٣ ستوريز</span>
+      <span class="badge badge-keyword">DM «أنا مستقبل ملايين بإسم الغني»</span>
+    </div>
+  </a>
+
+  <a class="seq-card" href="netflix-vs-freebie-rizq-notebook.pdf" target="_blank">
+    <h3>📺 Netflix Vs Freebie — دفتر استقبال الرزق (٣ ستوريز)</h3>
+    <p>مقارنة غير عادلة بين Netflix ودفتر مجاني — بيوزّع الـ freebie ويفنّل الجمهور لكورس المال والسعادة.</p>
+    <div class="meta-row">
+      <span class="pdf-tag">PDF</span>
+      <span class="badge">٣ ستوريز</span>
+      <span class="badge badge-keyword">DM «دفتر»</span>
+    </div>
+  </a>
+
+  <a class="seq-card" href="hate-comment-reply-proof-avalanche.pdf" target="_blank">
+    <h3>💬 Hate Comment Reply — انهيار الإثبات (٩ ستوريز)</h3>
+    <p>سكوينس بياخد كومنت شك حقيقي ويسحقه بإثبات شخصي + عميلات، ويقسم الجمهور لساخرين/متعلّمات.</p>
+    <div class="meta-row">
+      <span class="pdf-tag">PDF</span>
+      <span class="badge">٩ ستوريز</span>
+      <span class="badge badge-keyword">DM «الوعي المالي»</span>
+    </div>
   </a>
 
 </div>
