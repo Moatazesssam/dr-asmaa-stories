@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<title>الألم ← الحل ← الإثبات ← الطلب — ورشة آمنة مطمئنة</title>
+<style>
+  @page { size: A4; margin: 18mm 15mm; }
+  * { box-sizing: border-box; }
+  body {
+    font-family: "SF Arabic", "Cairo", "Noto Sans Arabic", -apple-system, system-ui, sans-serif;
+    direction: rtl;
+    text-align: right;
+    line-height: 1.75;
+    color: #1c1f1d;
+    background: #faf8f3;
+    max-width: 780px;
+    margin: 0 auto;
+    padding: 24px 28px;
+    font-size: 14.5px;
+  }
+  h1 {
+    color: #0d3a35;
+    border-bottom: 3px solid #c9885d;
+    padding-bottom: 10px;
+    font-size: 24px;
+    margin-bottom: 6px;
+  }
+  .meta {
+    color: #5a6760;
+    font-size: 13px;
+    margin-bottom: 28px;
+    line-height: 1.6;
+  }
+  .meta strong { color: #0d3a35; }
+  h2 {
+    color: #0d3a35;
+    background: linear-gradient(90deg, #e8e4d8 0%, transparent 100%);
+    padding: 8px 14px;
+    margin-top: 36px;
+    margin-bottom: 14px;
+    border-right: 5px solid #0d3a35;
+    font-size: 18px;
+    border-radius: 4px;
+  }
+  h3 {
+    color: #1a5a52;
+    margin-top: 28px;
+    margin-bottom: 10px;
+    font-size: 16px;
+    border-bottom: 1px dashed #b8a584;
+    padding-bottom: 6px;
+  }
+  p { margin: 10px 0; }
+  .intro {
+    background: #fff;
+    padding: 14px 18px;
+    border-radius: 8px;
+    border: 1px solid #e0d9c6;
+    margin-bottom: 24px;
+  }
+  .story-block {
+    background: #fff;
+    border: 1px solid #d8d3c2;
+    border-right: 5px solid #1a5a52;
+    border-radius: 8px;
+    padding: 16px 20px 18px;
+    margin: 18px 0;
+    page-break-inside: avoid;
+  }
+  .label {
+    font-weight: 600;
+    color: #0d3a35;
+    display: inline-block;
+    margin-bottom: 4px;
+    margin-top: 8px;
+  }
+  .visual-note {
+    color: #6b5a3a;
+    background: #f4ede0;
+    padding: 8px 12px;
+    border-radius: 6px;
+    font-size: 13.5px;
+    margin: 6px 0 12px;
+  }
+  .on-screen {
+    background: #0d3a35;
+    color: #fff;
+    padding: 12px 16px;
+    border-radius: 6px;
+    margin: 6px 0;
+    font-weight: 500;
+    line-height: 1.85;
+  }
+  .on-screen.body-list { background: #143f3b; }
+  .pink-highlight {
+    background: #f6c9b5;
+    color: #6e2e15;
+    padding: 10px 14px;
+    border-radius: 6px;
+    margin: 8px 0;
+    font-weight: 600;
+    line-height: 1.7;
+  }
+  .cta-block {
+    background: #c9885d;
+    color: #fff;
+    padding: 12px 16px;
+    border-radius: 6px;
+    margin: 8px 0;
+    font-weight: 600;
+  }
+  .quote-block {
+    background: #fff8eb;
+    border-right: 4px solid #c9885d;
+    padding: 12px 16px;
+    border-radius: 6px;
+    margin: 8px 0;
+    font-style: italic;
+    color: #5a3a1a;
+  }
+  .bonus-stack {
+    background: #f9f5ec;
+    border: 1px dashed #c9885d;
+    border-radius: 6px;
+    padding: 10px 14px;
+    margin: 6px 0;
+  }
+  .value-contrast {
+    background: #fff8eb;
+    border: 2px solid #c9885d;
+    padding: 10px 14px;
+    border-radius: 6px;
+    margin: 8px 0;
+    text-align: center;
+    font-size: 15px;
+    font-weight: 700;
+    color: #0d3a35;
+  }
+  pre.dm-template {
+    background: #f3efe5;
+    border: 1px solid #d8d3c2;
+    border-radius: 8px;
+    padding: 16px 20px;
+    direction: rtl;
+    text-align: right;
+    white-space: pre-wrap;
+    font-family: "SF Arabic", "Cairo", inherit;
+    font-size: 14px;
+    line-height: 1.85;
+    color: #1c1f1d;
+    page-break-inside: avoid;
+  }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 14px 0;
+    direction: rtl;
+    page-break-inside: avoid;
+  }
+  th, td {
+    padding: 10px 14px;
+    border: 1px solid #d8d3c2;
+    text-align: right;
+    font-size: 13.5px;
+  }
+  th {
+    background: #0d3a35;
+    color: #fff;
+    font-weight: 600;
+  }
+  tr:nth-child(even) td { background: #faf8f3; }
+  .copy-pack {
+    background: #fffaf2;
+    border: 1px solid #e0d9c6;
+    border-radius: 8px;
+    padding: 18px 22px;
+    margin: 12px 0;
+  }
+  .copy-pack .item {
+    border-bottom: 1px dashed #d8c9a8;
+    padding: 10px 0;
+  }
+  .copy-pack .item:last-child { border-bottom: none; }
+  .copy-pack .item-label {
+    font-weight: 700;
+    color: #0d3a35;
+    font-size: 13.5px;
+    margin-bottom: 4px;
+  }
+  .copy-pack .item-text {
+    background: #fff;
+    padding: 8px 12px;
+    border-radius: 5px;
+    border-right: 3px solid #1a5a52;
+    line-height: 1.7;
+  }
+  .footer-related {
+    margin-top: 32px;
+    padding-top: 12px;
+    border-top: 1px solid #d8d3c2;
+    color: #5a6760;
+    font-size: 13px;
+  }
+  @media print {
+    body { background: #fff; padding: 0; max-width: none; font-size: 13.5px; }
+    h2 { page-break-before: auto; }
+    h2:first-of-type { page-break-before: avoid; }
+    .story-block, .copy-pack, pre.dm-template, table { page-break-inside: avoid; }
+  }
+</style>
+</head>
+<body>
+
+<h1>🪞 الألم ← الحل ← الإثبات ← الطلب — "ناجحة من برّه، تعبانة من جوّه"</h1>
+<div class="meta">
+  <strong>الكلاينت:</strong> د. أسماء سعيد · <strong>الورشة:</strong> آمنة مطمئنة · <strong>الميعاد:</strong> الجمعة ١٢/٦ — ٨ مساءً بتوقيت مصر<br>
+  <strong>السعر:</strong> $19.99 لأول ٧٠ مشتركة · <strong>كلمة الـ DM:</strong> «آمنة»
+</div>
+
+<div class="intro">
+  سكوينس <strong>٧ ستوريز</strong> بياخد الست اللي وصلت — معاها فلوس، نجاح، مكانة — بس قلبها مش مرتاح، ويوريها إن الـ Fix مش في فلوس أكتر أو شغل أكتر، الـ Fix في <strong>جهاز عصبي آمن</strong>.<br>
+  الفنل: ستوري ← DM «آمنة» ← لينك التسجيل ← Checkout.
+</div>
+
+<h2>الفكرة</h2>
+<ul>
+  <li><strong>ستوري ١ — الألم:</strong> نسمّي الإحساس اللي هي بتخبّيه (ناجحة بس قلقانة).</li>
+  <li><strong>ستوري ٢ — التضخيم:</strong> الأعراض الجسدية للجهاز العصبي في حالة طوارئ.</li>
+  <li><strong>ستوري ٣ — الحل (المبدأ):</strong> الأمان مش في الرصيد، الأمان جوّاكي.</li>
+  <li><strong>ستوري ٤ — الحل (التفعيل):</strong> ٣ ساعات ورشة لايف الجمعة.</li>
+  <li><strong>ستوري ٥ — الإثبات:</strong> شهادة خريجة (استبدلي بشهادة حقيقية).</li>
+  <li><strong>ستوري ٦ — قنبلة القيمة:</strong> $265 → $19.99 لأول ٧٠.</li>
+  <li><strong>ستوري ٧ — الطلب:</strong> DM «آمنة».</li>
+</ul>
+
+<h2>📲 السكوينس — ٧ ستوريز</h2>
+
+<div class="story-block">
+  <h3>ستوري ١ — الألم (نسمّي اللي مش بتسمّيه)</h3>
+  <div class="visual-note"><strong>الفيجوال:</strong> صورة هادية لـ د. أسماء، نغمة دافيّة، الوش ظاهر، نظرة فيها تفهم.</div>
+
+  <div class="label">النص الأساسي:</div>
+  <div class="on-screen">
+    إنتي مش "مغرورة" ولا "ناكرة نعمة"<br>
+    إنتي بس <strong>ناجحة من برّه، قلبك تعبان من جوّه</strong> 💚
+  </div>
+
+  <div class="label">النص الأصغر:</div>
+  <div class="on-screen body-list">
+    معاكي فلوس، عندك مكانة، الناس بتقولك "إنتي وصلتي"...<br>
+    بس بتنامي قلقانة ومش قادرة تستمتعي بأي حاجة 🌑
+  </div>
+</div>
+
+<div class="story-block">
+  <h3>ستوري ٢ — التضخيم (نوريلها الأعراض)</h3>
+  <div class="visual-note"><strong>الفيجوال:</strong> قُرب على إيد بتمسك كوباية شاي، أو سيلفي هادي.</div>
+
+  <div class="label">النص فوق:</div>
+  <div class="on-screen">لو الكلام ده بيوصلك، يبقى فيه احتمال إن جسمك في "حالة طوارئ" 👇</div>
+
+  <div class="label">بلوك الأعراض:</div>
+  <div class="on-screen body-list">
+    ❌ بتصحي قلقانة ومش عارفة ليه<br>
+    ❌ بتفكري في بكرة وقت ما المفروض ترتاحي<br>
+    ❌ كل ما الفلوس تكبر، خوفك من ضياعها يكبر<br>
+    ❌ بتحققي إنجاز وتدوّري على التالي على طول
+  </div>
+
+  <div class="label">هايلايت زهري:</div>
+  <div class="pink-highlight">
+    ده مش "طبيعي للناجحات"<br>
+    ده <strong>جهاز عصبي عايش في حالة استنفار</strong> ٢٤ ساعة
+  </div>
+</div>
+
+<div class="story-block">
+  <h3>ستوري ٣ — الحل (المبدأ)</h3>
+  <div class="visual-note"><strong>الفيجوال:</strong> وشها هادي، عينين على الكاميرا.</div>
+
+  <div class="label">النص فوق:</div>
+  <div class="on-screen">
+    الأمان مش في رصيدك في البنك<br>
+    الأمان في <strong>قلبك وجهازك العصبي</strong> 💚
+  </div>
+
+  <div class="label">المتن:</div>
+  <div class="on-screen body-list">
+    كل ما تربطي إحساسك بالأمان بحاجة من برّه (فلوس، شغل، علاقة) —<br>
+    بتدفعي قلق طول عمرك
+  </div>
+
+  <div class="label">هايلايت زهري:</div>
+  <div class="pink-highlight">
+    الأمان الحقيقي بيتبني من جوّاكي<br>
+    و<strong>بمجرد ما يتبني، البركة بتتنزّل</strong> على كل حاجة 🕊
+  </div>
+</div>
+
+<div class="story-block">
+  <h3>ستوري ٤ — الحل (التفعيل)</h3>
+  <div class="visual-note"><strong>الفيجوال:</strong> جرافيك للورشة أو سكرين شوت من صفحة التسجيل.</div>
+
+  <div class="label">النص فوق:</div>
+  <div class="on-screen">علشان كده عاملة ورشة لايف ٣ ساعات اسمها 👇</div>
+
+  <div class="label">تعريف الورشة:</div>
+  <div class="on-screen body-list">
+    🕊 <strong>«آمنة مطمئنة»</strong><br>
+    ٣ ساعات تطبيق عملي مباشر معايا<br>
+    الجمعة ١٢/٦ — ٨ مساءً بتوقيت مصر
+  </div>
+
+  <div class="label">المحاور:</div>
+  <div class="on-screen body-list">
+    هنطبّق سوا:<br>
+    🔓 فك شفرة التوتر و القلق الخفي<br>
+    💰 كسر وهم الأمان المادي<br>
+    🧹 ديتوكس القلق وراحة الأعصاب<br>
+    🕊 بناء حالة الطمأنينة الحقيقية
+  </div>
+</div>
+
+<div class="story-block">
+  <h3>ستوري ٥ — الإثبات (شهادة محددة)</h3>
+  <div class="visual-note"><strong>الفيجوال:</strong> سكرين شوت لشهادة DM حقيقية من ست حضرت ورشة سابقة، اسمها بحرفها الأول بس.</div>
+
+  <div class="label">النص فوق:</div>
+  <div class="on-screen">ست بقالها ٥ سنين معاها فلوس وما بتنامش</div>
+
+  <div class="label">بلوك الاقتباس:</div>
+  <div class="quote-block">
+    بعد الورشة بعتتلي:<br>
+    "لأول مرة بنام بقلب فاضي — مش بفكر في رصيد ولا في بكرة" 💚
+  </div>
+</div>
+
+<div class="story-block">
+  <h3>ستوري ٦ — قنبلة القيمة + Bonus Stack</h3>
+  <div class="visual-note"><strong>الفيجوال:</strong> جرافيك بسيط للـ stack ($265 قيمة فعلية → $19.99 سعر ليكي).</div>
+
+  <div class="label">النص فوق:</div>
+  <div class="on-screen">لما تحجزي مكانك في الـ ٧٠ الأولانيين، بتاخدي:</div>
+
+  <div class="label">بلوك الـ Stack:</div>
+  <div class="bonus-stack">
+    ✅ ورشة لايف ٣ ساعات — <strong>$100</strong><br>
+    ✅ تسجيل الورشة مدى الحياة — <strong>$50</strong><br>
+    ✅ شيت "اختبار الطمأنينة وأين يسكن القلق" — <strong>$25</strong><br>
+    ✅ تأمل صوتي "الأمان والاطمئنان" — <strong>$25</strong><br>
+    ✅ جروب متابعة لمدة أسبوع — <strong>$65</strong>
+  </div>
+
+  <div class="value-contrast">
+    القيمة الحقيقية: $265<br>
+    ليكي إنتي: $19.99 بس 🎁
+  </div>
+
+  <div class="label">هايلايت زهري:</div>
+  <div class="pink-highlight">لأول ٧٠ مشتركة — بعد كده السعر يتضاعف لـ $40 والـ Bonuses بتختفي</div>
+</div>
+
+<div class="story-block">
+  <h3>ستوري ٧ — الطلب</h3>
+  <div class="visual-note"><strong>الفيجوال:</strong> صورة دافيّة لـ د. أسماء، نور ذهبي، ابتسامة هادية.</div>
+
+  <div class="label">النص:</div>
+  <div class="on-screen">
+    لو حسّيتي إن الكلام ده عليكي —<br>
+    ولو قلبك تعب وعايز يرتاح من الحالة دي —
+  </div>
+
+  <div class="label">هايلايت زهري للطلب:</div>
+  <div class="pink-highlight"><strong>ابعتيلي «آمنة» على الـ DM 📩</strong></div>
+
+  <div class="label">الأسفل:</div>
+  <div class="cta-block">والرابط هيوصلك على طول لتحجزي مكانك في الـ ٧٠ 💚</div>
+</div>
+
+<h2>📋 حزمة النصوص (نسخ ولصق — جاهزة تتحط على الشاشة)</h2>
+
+<div class="copy-pack">
+  <div class="item">
+    <div class="item-label">ستوري ١ — النص الأساسي:</div>
+    <div class="item-text">إنتي مش "مغرورة" ولا "ناكرة نعمة"<br>إنتي بس ناجحة من برّه، قلبك تعبان من جوّه 💚</div>
+  </div>
+  <div class="item">
+    <div class="item-label">ستوري ١ — النص الأصغر:</div>
+    <div class="item-text">معاكي فلوس، عندك مكانة، الناس بتقولك "إنتي وصلتي"...<br>بس بتنامي قلقانة ومش قادرة تستمتعي بأي حاجة 🌑</div>
+  </div>
+  <div class="item">
+    <div class="item-label">ستوري ٢ — فوق:</div>
+    <div class="item-text">لو الكلام ده بيوصلك، يبقى فيه احتمال إن جسمك في "حالة طوارئ" 👇</div>
+  </div>
+  <div class="item">
+    <div class="item-label">ستوري ٢ — الأعراض:</div>
+    <div class="item-text">❌ بتصحي قلقانة ومش عارفة ليه<br>❌ بتفكري في بكرة وقت ما المفروض ترتاحي<br>❌ كل ما الفلوس تكبر، خوفك من ضياعها يكبر<br>❌ بتحققي إنجاز وتدوّري على التالي على طول</div>
+  </div>
+  <div class="item">
+    <div class="item-label">ستوري ٢ — هايلايت زهري:</div>
+    <div class="item-text">ده مش "طبيعي للناجحات"<br>ده جهاز عصبي عايش في حالة استنفار ٢٤ ساعة</div>
+  </div>
+  <div class="item">
+    <div class="item-label">ستوري ٣ — فوق:</div>
+    <div class="item-text">الأمان مش في رصيدك في البنك<br>الأمان في قلبك وجهازك العصبي 💚</div>
+  </div>
+  <div class="item">
+    <div class="item-label">ستوري ٣ — المتن:</div>
+    <div class="item-text">كل ما تربطي إحساسك بالأمان بحاجة من برّه (فلوس، شغل، علاقة) —<br>بتدفعي قلق طول عمرك</div>
+  </div>
+  <div class="item">
+    <div class="item-label">ستوري ٣ — هايلايت زهري:</div>
+    <div class="item-text">الأمان الحقيقي بيتبني من جوّاكي<br>وبمجرد ما يتبني، البركة بتتنزّل على كل حاجة 🕊</div>
+  </div>
+  <div class="item">
+    <div class="item-label">ستوري ٤ — فوق:</div>
+    <div class="item-text">علشان كده عاملة ورشة لايف ٣ ساعات اسمها 👇</div>
+  </div>
+  <div class="item">
+    <div class="item-label">ستوري ٤ — تعريف الورشة:</div>
+    <div class="item-text">🕊 «آمنة مطمئنة»<br>٣ ساعات تطبيق عملي مباشر معايا<br>الجمعة ١٢/٦ — ٨ مساءً بتوقيت مصر</div>
+  </div>
+  <div class="item">
+    <div class="item-label">ستوري ٤ — المحاور:</div>
+    <div class="item-text">هنطبّق سوا:<br>🔓 فك شفرة التوتر و القلق الخفي<br>💰 كسر وهم الأمان المادي<br>🧹 ديتوكس القلق وراحة الأعصاب<br>🕊 بناء حالة الطمأنينة الحقيقية</div>
+  </div>
+  <div class="item">
+    <div class="item-label">ستوري ٥ — فوق:</div>
+    <div class="item-text">ست بقالها ٥ سنين معاها فلوس وما بتنامش</div>
+  </div>
+  <div class="item">
+    <div class="item-label">ستوري ٥ — الاقتباس:</div>
+    <div class="item-text">بعد الورشة بعتتلي:<br>"لأول مرة بنام بقلب فاضي — مش بفكر في رصيد ولا في بكرة" 💚</div>
+  </div>
+  <div class="item">
+    <div class="item-label">ستوري ٦ — فوق:</div>
+    <div class="item-text">لما تحجزي مكانك في الـ ٧٠ الأولانيين، بتاخدي:</div>
+  </div>
+  <div class="item">
+    <div class="item-label">ستوري ٦ — الـ Stack:</div>
+    <div class="item-text">✅ ورشة لايف ٣ ساعات — $100<br>✅ تسجيل الورشة مدى الحياة — $50<br>✅ شيت "اختبار الطمأنينة وأين يسكن القلق" — $25<br>✅ تأمل صوتي "الأمان والاطمئنان" — $25<br>✅ جروب متابعة لمدة أسبوع — $65</div>
+  </div>
+  <div class="item">
+    <div class="item-label">ستوري ٦ — التباين:</div>
+    <div class="item-text">القيمة الحقيقية: $265<br>ليكي إنتي: $19.99 بس 🎁</div>
+  </div>
+  <div class="item">
+    <div class="item-label">ستوري ٦ — هايلايت زهري:</div>
+    <div class="item-text">لأول ٧٠ مشتركة — بعد كده السعر يتضاعف لـ $40 والـ Bonuses بتختفي</div>
+  </div>
+  <div class="item">
+    <div class="item-label">ستوري ٧ — المتن:</div>
+    <div class="item-text">لو حسّيتي إن الكلام ده عليكي —<br>ولو قلبك تعب وعايز يرتاح من الحالة دي —</div>
+  </div>
+  <div class="item">
+    <div class="item-label">ستوري ٧ — هايلايت زهري للطلب:</div>
+    <div class="item-text">ابعتيلي «آمنة» على الـ DM 📩</div>
+  </div>
+  <div class="item">
+    <div class="item-label">ستوري ٧ — الأسفل:</div>
+    <div class="item-text">والرابط هيوصلك على طول لتحجزي مكانك في الـ ٧٠ 💚</div>
+  </div>
+</div>
+
+<h2>🤖 رسالة الردّ التلقائي على الـ DM</h2>
+<pre class="dm-template">أهلاً يا قمر 💚
+
+لو وصلت ليّا كلمة «آمنة» منّك —
+يبقى في قلبك حاجة قالتلك إن الوقت اللي تخرجي فيه من حالة الطوارئ دي وصل 🕊
+
+ده الرابط لحجز مكانك في ورشة «آمنة مطمئنة»:
+[رابط الـ Checkout / Sales Page]
+
+تفاصيل سريعة:
+✨ ٣ ساعات تطبيق عملي مباشر معايا
+✨ الجمعة ١٢/٦ — ٨ مساءً بتوقيت مصر
+✨ $19.99 لأول ٧٠ مقعد (بعدها يتضاعف لـ $40)
+✨ ٤ بونصات قيمتهم $265 لأول ٧٠ بس
+
+ولو حسّيتي بعد الورشة إنها ما ساعدتكيش —
+رجوع فلوس 100% بدون أي أسئلة 💚
+
+شوفك يوم الجمعة 🌊</pre>
+
+<h2>⏱ خطة التوقيت والنشر</h2>
+<p>سكوينس عاطفي. ينشر <strong>مرة واحدة</strong> خلال يوم — يفضّل اليوم اللي قبل الورشة بـ ٢–٣ أيام علشان الـ Pain يلمس وتحجز قبل ما المقاعد تخلص.</p>
+<table>
+  <thead><tr><th>الموعد</th><th>الوقت (القاهرة)</th><th>الستوري</th></tr></thead>
+  <tbody>
+    <tr><td>T-0</td><td>الصبح</td><td>ستوري ١ (خطّاف الألم)</td></tr>
+    <tr><td>T+١٥د</td><td>الصبح</td><td>ستوري ٢ (التضخيم — الأعراض)</td></tr>
+    <tr><td>T+٣٠د</td><td>الصبح</td><td>ستوري ٣ (الحل — المبدأ)</td></tr>
+    <tr><td>T+٤٥د</td><td>الصبح</td><td>ستوري ٤ (الحل — الورشة)</td></tr>
+    <tr><td>T+١س</td><td>بعد الضهر</td><td>ستوري ٥ (الإثبات)</td></tr>
+    <tr><td>T+١س ١٥د</td><td>بعد الضهر</td><td>ستوري ٦ (قنبلة القيمة)</td></tr>
+    <tr><td>T+١س ٣٠د</td><td>بعد الضهر</td><td>ستوري ٧ (الطلب)</td></tr>
+  </tbody>
+</table>
+<p style="color:#5a6760;font-size:13px;">→ تقريبًا ٩٠ دقيقة. التوقيت ضيق علشان السكوينس بيركب على موجة عاطفية — متسبيهاش تبرد.</p>
+
+<h2>🔁 ملاحظات لإعادة الاستخدام</h2>
+<ul>
+  <li>إطار "ناجحة من برّه، قلقانة من جوّه" بيشتغل تحديدًا لجمهور د. أسماء — الستات اللي حققت إنجاز ومش قادرة تستمتع بيه. لا تستخدمي ده مع جمهور تاني.</li>
+  <li>ستوري ٥ (الإثبات) <strong>لازم يكون شهادة حقيقية</strong> — مزيف بيدمّر الثقة لو اكتشف.</li>
+  <li>ممكن تبدّلي ستوري ٦ (Bonus Stack) بستوري عن الـ guarantee (ضمان رجوع الفلوس) لو الجمهور حسّاس للسعر مش للقيمة.</li>
+</ul>
+
+<div class="footer-related">
+  <strong>علاقات:</strong> dr-asmaa-saied · workshop-fomo-aman-mutmaina
+</div>
+
+</body>
+</html>
